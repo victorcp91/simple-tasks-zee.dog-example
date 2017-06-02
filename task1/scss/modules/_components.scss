@@ -1,0 +1,134 @@
+.tipbar{
+	text-align:center;
+	padding-top:10px;
+	font-size:.8em;
+}
+
+	.tipbar__text,.tipbar__promotionalText{
+		float:left;
+	}
+	.tipbar__promotionalText{
+		clear:both;
+	}
+
+@media screen and (min-width: 768px) {
+	.tipbar__text{
+		margin:0;
+		float:left;
+	}
+	.tipbar__promotionalText{
+		float:none;
+	}
+}
+//--------------------------------------
+.search{
+	display:block;
+	height: 40px;
+	max-width: 650px;
+	margin:0 auto;
+	white-space:nowrap;
+}
+.search__field{
+	height: 40px;
+	width: 80%;
+	max-width: 581px;
+	padding-left:20px;
+	border:none;
+	background-color: $gray;
+	font-size: .95em;
+	text-transform: uppercase;
+	}
+
+.search__btn{
+	text-align: right;
+	height: 40px;
+	width:20%;
+	margin-left:-2%;
+	padding-right:15px;
+	line-height: 2.8em;
+	background-color:$gray;
+	cursor:pointer;
+}
+//-----------------------------------
+
+.article__picture{
+	display:block;
+	width:100%;
+}
+.article__text{
+	margin-top:30px;
+	padding:0 20px;
+	text-align:center;
+	font-size:1.3em;
+	color:$dark-gray;
+	line-height:1.5em;
+}
+//------------------------------------
+.top3__img{
+	display:block;
+	width:100%;
+	
+	transition:.3s ease-in-out;
+	cursor:pointer;
+}
+.top3__img:hover{
+	transform:scale(1.2,1.2); 
+}
+.top3__espiar{
+	display:block;
+	width:75px;
+	font-size:.8em;
+	font-weight:bold;
+	color:$dark-gray;
+	margin-bottom:30px;
+
+	opacity:.5;
+	cursor:pointer;
+}
+.top3__espiar:hover{
+	opacity:1;
+}
+.top3__espiar__icon{
+	padding:4px;
+	padding-left:5px;
+	margin-right:5px;
+	text-align:center;
+	font-size:1em;
+	line-height:.9em;
+	border:1px solid $dark-gray;
+	border-radius:15px;
+}
+//----------------------
+.product-info{
+	display:block;
+	text-align:center;
+	margin-top:25px;
+}
+	.product-info__name{
+		font-size: .9em;
+		font-weight: bold;
+
+	}
+	.product-info__price{
+		font-size: .8em;
+		margin:10px 0;
+		color:$dark-gray;
+	}
+//------------------------
+
+.frame{
+	display: flex;
+	max-width:960px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-content: flex-start;
+}
+.frame__img{
+	display:block;
+	margin:15px;
+	
+}
+.frame__img img{
+	display:block;
+}
