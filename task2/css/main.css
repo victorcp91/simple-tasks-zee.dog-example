@@ -1,0 +1,244 @@
+/*
+	Zee.Dog Task 2
+	Author:Victor Correa	
+*/
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype"), url("../fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.button {
+  width: 102px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  line-height: 5px;
+  cursor: pointer; }
+
+.button--signUp {
+  background: #027f6e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00C6AB), to(#027f6e));
+  background: -webkit-linear-gradient(#00C6AB, #027f6e);
+  background: linear-gradient(#00C6AB, #027f6e);
+  font-family: "HelveticaNeue";
+  color: white;
+  border: 1px solid #00C6AB; }
+
+.button--signUp:hover {
+  background: #00C6AB;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00C6AB), to(#00C6AB));
+  background: -webkit-linear-gradient(#00C6AB, #00C6AB);
+  background: linear-gradient(#00C6AB, #00C6AB);
+  border: 1px solid #00C6AB; }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 40px; }
+
+@media (min-width: 575px) {
+  .logo {
+    display: block;
+    width: 70px; } }
+
+.rectangularBox {
+  position: relative;
+  margin: 25px auto;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c7c7c8;
+  background-color: white;
+  padding-bottom: 50px; }
+
+@media (min-width: 992px) {
+  .rectangularBox {
+    margin-top: -60px;
+    height: 770px; } }
+
+@media (min-width: 1140px) {
+  .rectangularBox {
+    height: 680px; } }
+
+@media (min-width: 1300px) {
+  .rectangularBox {
+    height: 630px; } }
+
+.article {
+  display: block;
+  margin: 30px;
+  margin-top: 30px; }
+
+.article__title {
+  line-height: 1.5em;
+  font-family: "Gloria Hallelujah";
+  font-size: 1.1em;
+  color: #545d67;
+  margin-bottom: 10px; }
+
+.article__text {
+  font-family: "Arial";
+  font-size: 0.9em;
+  color: #545d67; }
+
+.signUpForm {
+  margin: 20px;
+  margin-bottom: -30px; }
+
+.signUpForm__title {
+  margin: 30px 10px 20px 10px;
+  font-family: "Arial";
+  font-size: 1.125em;
+  color: #545d67; }
+
+.signUpForm__description {
+  display: block;
+  margin: 0 10px;
+  font-family: "Arial";
+  font-size: 0.9em;
+  color: #545d67; }
+
+.signUpForm__feedback {
+  margin: 0 10px;
+  font-family: "HelveticaNeue-Bold";
+  font-size: 0.7em;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0; }
+
+.signUpForm__feedback--wrong {
+  color: #A94442;
+  opacity: 1; }
+
+.signUpForm__feedback--right {
+  color: #3c763d;
+  opacity: 1; }
+
+.signUpForm__input {
+  width: 100%;
+  height: 40px;
+  margin-top: 17px;
+  padding: 15px;
+  font-family: "HelveticaNeue-Bold";
+  font-size: 0.75em;
+  color: #545d67; }
+
+.signUpForm__buttonArea {
+  margin: 22px auto;
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container, .mainArea, .infoBar__content {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; }
+
+@media (min-width: 575px) {
+  .container, .mainArea, .infoBar__content {
+    padding: 0 70px; } }
+
+@media (min-width: 1200px) {
+  .container, .mainArea, .infoBar__content {
+    max-width: 1200px;
+    padding: 0; } }
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+  margin-right: -4px;
+  *zoom: 1;
+  *display: inline; }
+
+@media (min-width: 576px) {
+  .col-2 {
+    width: 50%; } }
+
+@media (min-width: 728px) {
+  .col-3 {
+    width: 33.3333%; } }
+
+.col-sideContent, .sideContent {
+  width: 100%; }
+
+@media (min-width: 992px) {
+  .col-content, .content {
+    width: 75%;
+    display: inline-block; }
+  .col-sideContent, .sideContent {
+    width: 25%;
+    float: left; } }
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: white; }
+
+.header {
+  height: 100px;
+  border-top: 12px solid black;
+  padding-top: 25px; }
+
+@media (min-width: 575px) {
+  .header {
+    height: 152px;
+    padding-top: 32px; } }
+
+.mainArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse; }
+
+@media (min-width: 992px) {
+  .mainArea {
+    display: block; } }
+
+.infoBar {
+  min-height: 80px;
+  background: url("../img/infoBar-bg.jpeg") repeat;
+  color: lightgray;
+  font-family: "Montserrat", sans-serif;
+  font-size: .8em;
+  word-spacing: 7px; }
+
+.infoBar__content {
+  padding: 20px 30px; }
+
+@media (min-width: 992px) {
+  .infoBar__content {
+    width: 45%;
+    padding-left: 10%; } }
+
+.product-img {
+  display: block;
+  width: 100%; }
+
+@media (min-width: 575px) {
+  .product-img {
+    margin-top: 20px; } }
+
+@media (min-width: 575px) {
+  .product-img {
+    margin-top: 0; } }

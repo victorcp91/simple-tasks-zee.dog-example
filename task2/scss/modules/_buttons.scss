@@ -1,0 +1,22 @@
+.button{
+	width:102px;
+	height:35px;
+	border-radius:25px;
+	border:none;
+	line-height:5px;
+
+	cursor:pointer;
+}
+	.button--signUp{
+		background: $signUp-button-color2; 
+	    background: linear-gradient($signUp-button-color1, $signUp-button-color2);
+		
+		font-family:$signUp-button-font;
+		color:$signUp-button-font-color;
+		border:1px solid $signUp-button-border-color;
+	}
+	.button--signUp:hover{
+		background: $signUp-button-hover-color2; 
+	    background: linear-gradient($signUp-button-hover-color1, $signUp-button-hover-color2);
+		border:1px solid $signUp-button-hover-border-color;
+	}

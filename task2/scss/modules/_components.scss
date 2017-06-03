@@ -1,0 +1,107 @@
+.logo{
+	display: block;
+	margin:0 auto;
+	width:40px;
+	
+}
+	@media (min-width:575px){
+		.logo{
+			display: block;
+			width: 70px;
+		}
+	}
+
+
+.rectangularBox{
+	position:relative;
+	margin:25px auto;
+	width:100%;
+	max-width:100%;
+	border-radius:5px;
+	border:1px solid $box-border-color;
+	background-color:$box-color;
+	padding-bottom:50px;
+}
+	@media (min-width:992px){
+		.rectangularBox{
+			margin-top: -60px;
+			height:770px;
+		}
+	}
+	@media (min-width:1140px){
+		.rectangularBox{
+			height:680px;
+		}
+	}
+	@media (min-width:1300px){
+		.rectangularBox{
+			height:630px;
+		}
+	}
+
+.article{
+	display:block;
+	margin:30px;
+	margin-top:30px;
+}
+	.article__title{
+		line-height: $article-title-line-height;
+		font-family: $article-title-font;
+		font-size:$article-title-font-size;
+		color:$article-title-font-color;
+		margin-bottom: 10px;
+	}
+	
+	.article__text{
+		font-family: $article-text-font;
+		font-size:$article-text-font-size;
+		color:$article-text-font-color;
+	}
+
+.signUpForm{
+	margin:20px;
+	margin-bottom:-30px;
+}
+	.signUpForm__title{
+		margin: 30px 10px 20px 10px;
+		font-family:$form-title-font;
+		font-size:$form-title-font-size;
+		color:$form-title-color;
+	}
+	.signUpForm__description{
+		display: block;
+		margin:0 10px;
+		font-family:$form-description-font;
+		font-size:$form-description-font-size;
+		color:$form-description-color;
+	}
+	.signUpForm__feedback{
+		margin:0 10px;
+		font-family:$form-feedback-font;
+		font-size:$form-feedback-font-size;
+		transition:all 1s ease-in-out;
+		opacity: 0;
+	}
+	.signUpForm__feedback--wrong{
+		color:$form-feedback-wrong-color;
+		opacity: 1;
+	}
+	.signUpForm__feedback--right{
+		color:$form-feedback-right-color;
+		opacity: 1;
+	}
+
+	.signUpForm__input{
+		width:100%;
+		height: 40px;
+		margin-top:17px;
+		padding:15px;
+		font-family:$form-input-font;
+		font-size:$form-input-font-size;
+		color:$form-input-color;
+	}
+	.signUpForm__buttonArea{
+		margin:22px auto;
+		text-align: center;
+	}
+
