@@ -13,19 +13,15 @@
     margin-right: auto;
     padding:0;
     
-}
-	@media (min-width:575px){
-		.container {
-			padding: 0 70px;
-		}
-	}
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1200px;
-            padding: 0;
-        }
-    }
 
+    @media (min-width:575px){
+        padding: 0 70px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+        padding: 0;
+    }
+}
 
 .col {
     display: inline-block;
@@ -39,15 +35,13 @@
     *display: inline;
 
 }
-	@media (min-width: 576px) {
-		
-    	.col-2 {
+    @media (min-width: 576px) {
+        
+        .col-2 {
             width: 50%;
         }
-	}
+    }
     @media (min-width: 728px) {
-    	
-        
         .col-3 {
             width: 33.3333%;
         }
